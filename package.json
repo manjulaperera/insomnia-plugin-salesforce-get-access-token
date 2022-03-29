@@ -1,0 +1,45 @@
+{
+  "name": "insomnia-plugin-salesforce-get-access-token",
+  "version": "1.0.0",
+  "description": "Get Saleceforce access token for a guest or a registered user",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "prepublish": "tsc",
+    "start": "nodemon ./src/main.ts",
+    "build": "tsc --project ./tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manjulaperera/insomnia-plugin-salesforce-get-access-token.git"
+  },
+  "keywords": [
+    "PKCE",
+    "OAuth2",
+    "AccessToken",
+    "Insomnia"
+  ],
+  "author": "Manjula Perera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manjulaperera/insomnia-plugin-salesforce-get-access-token/issues"
+  },
+  "homepage": "https://github.com/manjulaperera/insomnia-plugin-salesforce-get-access-token#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "ts-node": "^10.6.0",
+    "typescript": "^4.6.2"
+  },
+  "insomnia": {
+    "name": "SlasAccessToken",
+    "description": "Get Saleceforce access token for a guest or a registered user",
+    "images": {
+      "icon": "icon.svg",
+      "cover": "cover.svg"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "base64-arraybuffer": "^1.0.2"
+  }
+}
